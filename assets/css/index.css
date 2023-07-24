@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #e8edf8;
+
+    position: relative;
+}
+
+#container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+
+    box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.295);
+    border-radius: 8px;
+    background-color: #c9d5ee;
+    width: 500px;
+    padding: 16px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title > span > img {
+    height: 30px;
+}
+
+.title > h1 {
+    position: relative;
+    color: #0b1323;
+}
+
+.title > h1::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 4px;
+    width: 55px;
+    background-color: #699bf7;
+    margin-top: 2px;
+}
+
+.inputBox {
+    margin: 16px 0px;
+}
+
+.inputBox > input {
+    border: none;
+    background-color: #f0f0f0;
+    outline: none;
+    padding: 5px;
+    color: #0b1323;
+    font-size: 16px;
+}
+
+.bttn {
+    cursor: pointer;
+    border: none;
+    padding: 7px;
+    background-color: #3961b1;
+    color: #f0f0f0;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.bttn:hover {
+    box-shadow: 0px 2px 5px #699bf7;
+    transform: scale(1.01);
+}
+
+.add {
+    width: 100px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 32px;
+    border-top: 2px solid #699bf7;
+    padding-top: 16px;
+}
+
+.task > label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0b1323;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#descriptionText {
+    resize: none;
+    outline: none;
+    padding: 7px 0px 2px 5px;
+}
+
+.bttnTask {
+    display: flex;
+    gap: 20px;
+}
+
+.bttnTask img {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.bttnTask img:hover {
+    box-shadow: 0px 0px 5px #699bf7;
+    transition: 0.5s;
+}
